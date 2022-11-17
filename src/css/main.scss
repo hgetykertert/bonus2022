@@ -1,0 +1,273 @@
+$main-text-color: black;
+$secondary-text-color: yellow;
+$additional-text-color: white;
+$section-padding-y: 30px;
+$section-padding-x: 200px;
+
+a[role="button"] {
+  max-width: fit-content;
+  width: 100%;
+  min-height: 45px;
+}
+
+html {
+  height: 100%;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+
+  body {
+    opacity: 0;
+    margin: 0;
+    counter-reset: block;
+
+    main {
+      color: $main-text-color;
+
+      i {
+        transform: scale(1.7);
+      }
+
+      > section {
+        padding-top: $section-padding-y;
+        padding-bottom: $section-padding-y;
+      }
+
+      #header {
+        background-image: url(../images/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(0 0 0 / .4);
+
+        .container {
+          .row {
+
+            header {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 15vh;
+
+              nav {
+                display: flex;
+                gap: 30px;
+
+                > a {
+                  color: $additional-text-color
+                }
+              }
+            }
+
+            .header-content {
+              display: flex;
+              flex-direction: column;
+
+              .info {
+
+                .text {
+                  line-height: 2rem;
+
+                  .data {
+                    color: $secondary-text-color;
+                  }
+                }
+
+              }
+
+              .title {
+
+                > .price {
+                  color: $secondary-text-color;
+                }
+              }
+
+              .promise-text {
+              }
+
+              button {
+                min-height: 45px;
+              }
+
+              button.d-md-none {
+                transform: scale(1.5);
+              }
+            }
+
+            .header-timer {
+              max-width: fit-content;
+              margin-bottom: 30vh;
+
+              .text {
+                font-size: 12px;
+              }
+
+              .time {
+                display: flex;
+                justify-content: space-between;
+
+                > span {
+                  font-size: 36px;
+                }
+
+                > .colon {
+
+                }
+              }
+
+              .advertisement {
+                font-size: 20px;
+                text-transform: uppercase;
+                color: $secondary-text-color;
+              }
+            }
+          }
+        }
+      }
+
+      #how-to-participate {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0 0 0 / .4);
+
+        .container {
+          .row {
+            .col {
+              > .title {
+                position: relative;
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  height: 16px;
+                  width: 100%;
+                  background-color: green;
+                  bottom: -20px;
+                  left: 0;
+                  padding-right: 1000px;
+                  transform: translateX(-650px);
+                }
+              }
+
+              .list {
+                display: flex;
+
+                @media (max-width: 700px) {
+                  > div {
+                    margin: 0 30px;
+                  }
+                }
+
+                .block {
+                  position: relative;
+                  margin-bottom: 50px;
+                  padding-left: 20px;
+                  padding-right: 40px;
+
+                  &::before {
+                    counter-increment: block;
+                    content: "0" counter(block);
+                    color: $secondary-text-color;
+                    position: absolute;
+                    top: -3px;
+                    left: -20px;
+                    font-size: 26px;
+                  }
+
+                  > .title {
+                    margin-bottom: 5px;
+                  }
+
+                  > .info {
+                    margin: 0;
+                  }
+                }
+
+                .first {
+
+                }
+
+                .second {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-end;
+
+                  button {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #facts {
+        ul {
+          li {
+            border: none;
+
+            &::before {
+              content: "";
+              background-image: url(../images/star.png);
+              position: absolute;
+              left: -5px;
+              top: 12px;
+              background-size: 20px;
+              background-repeat: no-repeat;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+
+      #reviews {
+        background-color: saddlebrown;
+
+        .second {
+          .block {
+            .content {
+              background-color: salmon;
+              padding: 20px;
+
+              .avatar {
+                background-image: url(../images/bg.jpg);
+                background-position: center center;
+                background-size: cover;
+                width: 100px;
+                aspect-ratio: 1 / 1;
+                margin: 0 auto;
+                border-radius: 50%;
+              }
+
+              .personal {
+                .city::before {
+                  content: "г. ";
+                }
+
+                .win-date::before {
+                  content: "Дата выигрыша: ";
+                }
+              }
+            }
+          }
+        }
+
+        .third {
+          gap: 30px;
+
+          > i {
+            cursor: pointer;
+          }
+        }
+      }
+
+      footer {
+
+      }
+    }
+  }
+}

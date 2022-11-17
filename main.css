@@ -1,0 +1,175 @@
+button {
+  max-width: 200px;
+  width: 100%;
+  min-height: 45px;
+}
+
+html {
+  height: 100%;
+}
+a[role=button] {
+  max-width: fit-content;
+  width: 100%;
+  min-height: 45px;
+}
+html body main i {
+  transform: scale(1.7);
+}
+html body main #reviews {
+  background-color: saddlebrown;
+}
+html body main #reviews .second .block .content {
+  background-color: salmon;
+  padding: 20px;
+}
+html body main #reviews .second .block .content .avatar {
+  background-image: url(../images/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100px;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+html body main #reviews .second .block .content .personal .city::before {
+  content: "г. ";
+}
+html body main #reviews .second .block .content .personal .win-date::before {
+  content: "Дата выигрыша: ";
+}
+html body main #reviews .third {
+  gap: 30px;
+}
+html body main #reviews .third > i {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
+html h1, html h2, html h3, html h4, html h5, html h6 {
+  margin: 0;
+}
+html body {
+  opacity: 0;
+  margin: 0;
+  counter-reset: block;
+}
+html body main {
+  color: black;
+}
+html body main > section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+html body main #header {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+html body main #header .container .row header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15vh;
+}
+html body main #header .container .row header nav {
+  display: flex;
+  gap: 30px;
+}
+html body main #header .container .row header nav > a {
+  color: white;
+}
+html body main #header .container .row .header-content {
+  display: flex;
+  flex-direction: column;
+}
+html body main #header .container .row .header-content .info .text {
+  line-height: 2rem;
+}
+html body main #header .container .row .header-content .info .text .data {
+  color: yellow;
+}
+html body main #header .container .row .header-content .title > .price {
+  color: yellow;
+}
+html body main #header .container .row .header-content button {
+  min-height: 45px;
+}
+html body main #header .container .row .header-timer {
+  max-width: fit-content;
+  margin-bottom: 30vh;
+}
+html body main #header .container .row .header-timer .text {
+  font-size: 12px;
+}
+html body main #header .container .row .header-timer .time {
+  display: flex;
+  justify-content: space-between;
+}
+html body main #header .container .row .header-timer .time > span {
+  font-size: 36px;
+}
+html body main #header .container .row .header-timer .advertisement {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: yellow;
+}
+html body main #how-to-participate {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(247, 135, 22);
+}
+#footer {
+  background-color: rgba(227, 116, 5) !important;
+}
+html body main #how-to-participate .container .row > .title {
+  position: relative;
+}
+html body main #how-to-participate .container .row > .title::after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 100%;
+  background-color: green;
+  bottom: -20px;
+  left: 0;
+  padding-right: 1000px;
+  transform: translateX(-650px);
+}
+html body main #how-to-participate .container .row .list {
+  display: flex;
+}
+html body main #how-to-participate .container .row .list .block {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+html body main #how-to-participate .container .row .list .block::before {
+  counter-increment: block;
+  content: "0" counter(block);
+  color: yellow;
+  position: absolute;
+  top: -3px;
+  left: -20px;
+  font-size: 26px;
+}
+html body main #how-to-participate .container .row .list .block > .title {
+  margin-bottom: 5px;
+}
+html body main #how-to-participate .container .row .list .block > .info {
+  margin: 0;
+}
+html body main #how-to-participate .container .row .list .second {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+html body main #facts li {
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */
